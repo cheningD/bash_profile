@@ -21,7 +21,7 @@ alias ip="curl icanhazip.com"
 # ----------------------
 alias ga='git add'
 alias gaa='git add .'
-alias gaaa='git add --all'
+alias gall='git add --all'
 alias gau='git add --update'
 alias gb='git branch'
 alias gbd='git branch --delete '
@@ -36,15 +36,17 @@ alias gcod='git checkout develop'
 alias gd='git diff'
 alias gda='git diff HEAD'
 alias gi='git init'
-alias glog='git log --graph --oneline --decorate --all'
-alias glogd='git log --pretty=format:"%h %ad %s" --date=short --all'
-alias glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+alias glog2='git log --graph --oneline --decorate --all'
+alias glog3='git log --pretty=format:"%h %ad %s" --date=short --all'
+alias glog="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 alias gm='git merge --no-ff'
 alias gma='git merge --abort'
 alias gmc='git merge --continue'
 alias gp='git pull'
 alias gpr='git pull --rebase'
 alias gr='git rebase'
+alias grc='git rebase --continue'
+alias gra='git rebase --abort'
 alias gs='git status'
 alias gss='git status --short'
 alias gst='git stash'
@@ -55,7 +57,7 @@ alias gstp='git stash pop'
 alias gsts='git stash save'
 
 alias grebase='gr'
-alas branch='gcob'
+alias branch='gcob'
 alias gamend="git commit --amend"
 alias gl="git branch -l"
 
